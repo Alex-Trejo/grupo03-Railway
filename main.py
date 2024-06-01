@@ -7,7 +7,9 @@ app = Flask(__name__)
 def index():
     my_set = {"Hello World, my name is: Alex Trejo", "Hello World, my name is: Karla Ansatuña"}
     
-    return jsonify(list(my_set))
+    response = jsonify(list(my_set))
+    response.mimetype = "application/json; charset=utf-8"
+    return response
 
 
 if __name__ == '__main__':
