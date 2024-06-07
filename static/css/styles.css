@@ -1,51 +1,103 @@
+/* styles.css */
+
+/* Estilos para el cuerpo y encabezado */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
-    color: #333;
+    background-color: #f4f4f4; /* Color de fondo gris claro */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Para que el footer se mantenga en la parte inferior */
 }
 
-header, footer {
-    background: #5151E5;
-    color: white;
+header {
+    background-color: #333; /* Color de fondo negro */
+    color: #fff; /* Color del texto blanco */
+    padding: 20px;
     text-align: center;
-    padding: 1rem 0;
 }
 
 header h1 {
     margin: 0;
 }
 
+header h2 {
+    margin-top: 5px;
+}
+
+/* Estilos para el contenido principal */
 main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1; /* Para que ocupe el espacio restante */
+    padding: 20px;
 }
 
 .content {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: #fff; /* Color de fondo blanco */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo negro */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0; /* Fija el footer en la parte inferior */
+    width: 100%;
+}
+
+/* Estilos para el botón */
 button {
-    background: #72EDF2;
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
     border: none;
     padding: 10px 20px;
-    color: #333;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s;
+    border-radius: 5px;
 }
 
 button:hover {
-    background: #5151E5;
-    color: white;
+    background-color: #0056b3; /* Color de fondo azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
