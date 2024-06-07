@@ -8,4 +8,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080)  # Escucha en todas las interfaces en el puerto 8080
