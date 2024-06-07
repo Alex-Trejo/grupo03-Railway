@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App on Railway</title>
+    <title>My Custom Flask App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Hello World from Railway with Flask!</h1>
+    <header>
+        <h1>Welcome to My Custom Flask App</h1>
+    </header>
+    <main>
+        <section class="content">
+            <p>This is a sample webpage served by a Flask backend and styled with custom CSS.</p>
+            <button id="actionButton">Click Me</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Custom Flask App</p>
+    </footer>
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>

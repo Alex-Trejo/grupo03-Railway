@@ -1,3 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Hello World from Railway with Flask!');
+    const actionButton = document.getElementById('actionButton');
+    actionButton.addEventListener('click', function() {
+        alert('Button clicked!');
+    });
 });
